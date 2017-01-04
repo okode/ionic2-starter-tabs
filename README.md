@@ -31,20 +31,39 @@ $ npm update -g
 $ npm install -g ionic cordova
 ```
 
-Create new App
---------------
+Create a new Git repository
+---------------------------
+https://help.github.com/articles/creating-a-new-repository/
 
+Create new App and initialize repository
+----------------------------------------
 Start new App from template
 ```
 $ ionic start --v2 --appname Demo --id com.okode.demo --skip-npm demo https://github.com/okode/ionic2-starter-tabs
+$ cd demo
+```
+
+Update executable permission for scripts
+----------------------------------------
+```
+$ chmod a+x release.sh
+```
+
+Create initial yarn.lock file
+-----------------------------
+```
 $ yarn install
 ```
 
-Update Git repo
----------------------------
+Update Git repo enabling Git Flow
+---------------------------------
 ```
-$ git add *
+$ git init
+$ git add .
 $ git add -f www .editorconfig .gitignore
 $ git commit -m"Initial import"
-$ git push
+$ git remote add origin https://github.com/okode/demo
+$ git push -u origin master
+$ git flow init
+$ git push --set-upstream origin develop
 ```
