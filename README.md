@@ -35,8 +35,8 @@ Create a new Git repository
 ---------------------------
 https://help.github.com/articles/creating-a-new-repository/
 
-Create new App and initialize repository
-----------------------------------------
+Create new App
+--------------
 Start new App from template
 ```
 $ ionic start --v2 --appname Demo --id com.okode.demo --skip-npm demo https://github.com/okode/ionic2-starter-tabs
