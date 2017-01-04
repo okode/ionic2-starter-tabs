@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { SharedModule } from '../shared/shared.module';
 import { HomePage } from './pages/home/home';
+import { SettingsPage } from './pages/settings/settings';
 
 @NgModule({
   declarations: [
-    HomePage
+    HomePage,
+    SettingsPage
   ],
   imports: [
     SharedModule,
@@ -16,4 +18,4 @@ import { HomePage } from './pages/home/home';
   ],
   providers: []
 })
-export class HomeModule {}
+export class MainModule {}
