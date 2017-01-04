@@ -47,8 +47,8 @@ Create new App
 Start new App from template
 
 ```
-$ ionic start --v2  \
---appname Demo      \
+$ ionic start --v2 \
+--appname Demo \
 --id com.okode.demo \
 --skip-npm demo https://github.com/okode/ionic2-starter-tabs
 $ cd demo
@@ -81,4 +81,13 @@ $ git remote add origin https://github.com/okode/demo
 $ git push -u origin master
 $ git flow init
 $ git push --set-upstream origin develop
+```
+
+Add Crashlytics plugin
+----------------------
+
+```
+$ ionic plugin add cordova-fabric-plugin --save \
+--variable FABRIC_API_KEY=xxx \
+--variable FABRIC_API_SECRET=xxx
 ```
