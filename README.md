@@ -79,7 +79,7 @@ $ git add -f www .editorconfig .gitignore
 $ git commit -m"Initial import"
 $ git remote add origin https://github.com/okode/demo
 $ git push -u origin master
-$ git flow init
+$ git flow init -d
 $ git push --set-upstream origin develop
 ```
 
