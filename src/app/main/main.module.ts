@@ -14,7 +14,8 @@ import { SettingsPage } from './pages/settings/settings';
     IonicModule.forRoot(HomePage)
   ],
   entryComponents: [
-    HomePage
+    HomePage,
+    SettingsPage
   ],
   providers: []
 })
