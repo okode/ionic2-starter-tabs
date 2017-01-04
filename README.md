@@ -19,6 +19,11 @@ Install latest version from App Store.
 $ brew install java android-sdk
 ```
 
+* Yarn
+```
+$ brew install yarn
+```
+
 * Ionic2
 ```
 $ brew install node ios-sim ios-deploy
@@ -31,8 +36,15 @@ Create new App
 
 Start new App from template
 ```
-$ ionic start --v2 --appname Demo --id com.okode.demo demo https://github.com/okode/ionic2-starter-tabs
+$ ionic start --v2 --appname Demo --id com.okode.demo --skip-npm demo https://github.com/okode/ionic2-starter-tabs
+$ yarn install
 ```
 
-Cleanup and update Git repo
+Update Git repo
 ---------------------------
+```
+$ git add *
+$ git add -f www .editorconfig .gitignore
+$ git commit -m"Initial import"
+$ git push
+```
