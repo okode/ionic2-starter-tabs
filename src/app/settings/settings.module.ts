@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { SharedModule } from '../shared/shared.module';
-import { AboutPage } from './pages/about/about';
+import { SettingsPage } from './pages/settings/settings';
 
 @NgModule({
   declarations: [
-    AboutPage
+    SettingsPage
   ],
   imports: [
     SharedModule,
-    IonicModule.forRoot(AboutPage)
+    IonicModule.forRoot(SettingsPage)
   ],
   entryComponents: [
-    AboutPage
+    SettingsPage
   ],
   providers: []
 })
-export class AboutModule {}
+export class SettingsModule {}
