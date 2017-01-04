@@ -59,6 +59,7 @@ Update executable permission for scripts
 
 ```
 $ chmod a+x release.sh
+$ chmod a+x travis/*.sh
 ```
 
 Create initial yarn.lock file

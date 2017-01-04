@@ -1,0 +1,48 @@
+branches:
+  only:
+  - master
+  - develop
+matrix:
+  include:
+  - os: linux
+    language: android
+    android:
+      components:
+      - tools
+      - platform-tools
+      - tools
+      - build-tools-23.0.1
+      - android-23
+      - android-24
+      - extra-google-google_play_services
+      - extra-google-m2repository
+      - extra-android-m2repository
+    addons:
+      apt:
+        sources:
+        - sourceline: deb https://dl.yarnpkg.com/debian/ stable main
+          key_url: https://dl.yarnpkg.com/debian/pubkey.gpg
+        packages:
+        - oracle-java8-installer
+        - oracle-java8-set-default
+        - yarn
+    licenses:
+    - android-sdk-preview-license-.+
+    - android-sdk-license-.+
+    - google-gdk-license-.+
+  - os: osx
+    language: objective-c
+    osx_image: xcode8
+before_install:
+- export LANG=en_US.UTF-8
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update ; brew install yarn ios-sim
+  ios-deploy ; rvm use system ; fi
+- nvm install 7
+- npm install -g ionic cordova
+before_script:
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./travis/osxkeychain.sh ; fi
+script:
+- ./travis/build.sh
+env:
+  global:
+  - JAVA_HOME=/usr/lib/jvm/java-8-oracle
