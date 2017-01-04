@@ -30,6 +30,7 @@ matrix:
     - android-sdk-preview-license-.+
     - android-sdk-license-.+
     - google-gdk-license-.+
+    env: JAVA_HOME=/usr/lib/jvm/java-8-oracle
   - os: osx
     language: objective-c
     osx_image: xcode8
@@ -43,6 +44,3 @@ before_script:
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./travis/osxkeychain.sh ; fi
 script:
 - ./travis/build.sh
-env:
-  global:
-  - JAVA_HOME=/usr/lib/jvm/java-8-oracle
