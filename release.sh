@@ -21,7 +21,6 @@ git merge master
 
 # Bump version
 sed -i '' "s/version=\"$CURRENT\"/version=\"$NEXT\"/" config.xml
-sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$NEXT\"/" package.json
 
 # Update develop with new bumped version
 git commit -a -m"Bumped version ($NEXT) [ci skip]"
