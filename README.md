@@ -39,8 +39,8 @@ Create new App
 --------------
 Start new App from template
 ```
-$ ionic start --v2 \
---appname Demo \
+$ ionic start --v2  \
+--appname Demo      \
 --id com.okode.demo \
 --skip-npm demo https://github.com/okode/ionic2-starter-tabs
 $ cd demo
