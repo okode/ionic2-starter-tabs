@@ -75,6 +75,13 @@ Create initial yarn.lock file
 $ yarn install
 ```
 
+Ensure project builds
+---------------------
+
+```
+$ ionic build
+```
+
 Add Crashlytics plugin
 ----------------------
 
