@@ -75,7 +75,7 @@ Update Git repo enabling Git Flow
 ```
 $ git init
 $ git add .
-$ git add -f www .editorconfig .gitignore
+$ git add -f www
 $ git commit -m"Initial import"
 $ git remote add origin https://github.com/okode/demo
 $ git push -u origin master
