@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { HomePage } from '../pages/home/home';
-import { SettingsPage } from '../pages/settings/settings';
+import { HomePage } from '../home/home';
+import { SettingsPage } from '../settings/settings';
 
 @Component({
   templateUrl: 'tabs.html'
