@@ -23,5 +23,5 @@ git merge master
 sed -i '' "s/version=\"$CURRENT\"/version=\"$NEXT\"/" config.xml
 
 # Update develop with new bumped version
-git commit -a -m"Bumped version ($NEXT) [ci skip]"
+git commit -a -m"Bumped version ($NEXT)"
 git push
