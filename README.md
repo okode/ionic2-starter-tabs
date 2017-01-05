@@ -54,6 +54,13 @@ $ ionic start --v2 \
 $ cd demo
 ```
 
+Create README.md
+----------------
+
+```
+$ echo 'Demo' > README.md
+```
+
 Update executable permission for scripts
 ----------------------------------------
 
