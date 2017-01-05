@@ -29,8 +29,7 @@ export class CrashlyticsErrorHandler extends IonicErrorHandler {
   declarations: [ App ],
   imports: [
     IonicModule.forRoot(App),
-    CoreModule,
-    MainModule
+    CoreModule
   ],
   bootstrap: [ IonicApp ],
   entryComponents: [ App ],
