@@ -75,6 +75,15 @@ Create initial yarn.lock file
 $ yarn install
 ```
 
+Add Crashlytics plugin
+----------------------
+
+```
+$ ionic plugin add cordova-fabric-plugin --save \
+--variable FABRIC_API_KEY=xxx \
+--variable FABRIC_API_SECRET=xxx
+```
+
 Update Git repo enabling Git Flow
 ---------------------------------
 
@@ -87,13 +96,4 @@ $ git remote add origin https://github.com/okode/demo
 $ git push -u origin master
 $ git flow init -d
 $ git push -u origin develop
-```
-
-Add Crashlytics plugin
-----------------------
-
-```
-$ ionic plugin add cordova-fabric-plugin --save \
---variable FABRIC_API_KEY=xxx \
---variable FABRIC_API_SECRET=xxx
 ```
