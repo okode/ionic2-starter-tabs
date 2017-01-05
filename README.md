@@ -88,12 +88,12 @@ Update Git repo enabling Git Flow
 ---------------------------------
 
 ```
-$ git init
-$ git add .
-$ git add -f www
-$ git commit -m"Initial import"
-$ git remote add origin https://github.com/okode/demo
-$ git push -u origin master
-$ git flow init -d
-$ git push -u origin develop
+$ git init && \
+  git add . && \
+  git add -f www && \
+  git commit -m"Initial import" && \
+  git remote add origin https://github.com/okode/demo && \
+  git push -u origin master && \
+  git flow init -d && \
+  git push -u origin develop
 ```
