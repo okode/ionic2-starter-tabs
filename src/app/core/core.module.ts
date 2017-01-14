@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
-import { TabsPage } from './pages/tabs/tabs';
-import { HomePage } from './pages/home/home';
-import { SettingsPage } from './pages/settings/settings';
+import { TabsComponent } from './components/tabs/tabs';
+import { HomeComponent } from './components/home/home';
+import { SettingsComponent } from './components/settings/settings';
+import { MoviesService } from './services/movies';
 
 @NgModule({
   declarations: [
-    TabsPage,
-    HomePage,
-    SettingsPage
+    TabsComponent,
+    HomeComponent,
+    SettingsComponent
   ],
   imports: [
-    IonicModule.forRoot(TabsPage)
+    IonicModule.forRoot(TabsComponent)
   ],
   entryComponents: [
-    TabsPage,
-    HomePage,
-    SettingsPage
+    TabsComponent,
+    HomeComponent,
+    SettingsComponent
   ],
-  providers: []
+  providers: [ provide: MoviesService, useClass: MoviesService ]
 })
-export class CoreModule {}
+export class CoreModule { }

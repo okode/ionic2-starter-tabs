@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Home</h2>
+  <button ion-button (click)="findAll()">Find all</button><br>
+  <button ion-button (click)="clear()">Clear</button><br>
+  <p *ngFor="let movie of movies">{{movie.Title}} ({{movie.Year}})</p>
+</ion-content>

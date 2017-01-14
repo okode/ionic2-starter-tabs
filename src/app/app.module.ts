@@ -1,4 +1,5 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { App } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -35,4 +36,3 @@ export class CrashlyticsErrorHandler extends IonicErrorHandler {
   providers: [ { provide: ErrorHandler, useClass: CrashlyticsErrorHandler } ]
 })
 export class AppModule {}
-
