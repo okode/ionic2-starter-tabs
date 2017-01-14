@@ -19,6 +19,6 @@ import { MoviesService } from './services/movies';
     HomeComponent,
     SettingsComponent
   ],
-  providers: [ provide: MoviesService, useClass: MoviesService ]
+  providers: [ { provide: MoviesService, useClass: MoviesService } ]
 })
 export class CoreModule { }
