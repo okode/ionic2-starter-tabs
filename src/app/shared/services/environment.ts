@@ -19,4 +19,9 @@ export class EnvironmentService {
     return this.environment;
   }
 
+  currentName() {
+    return (typeof this.environment !== 'undefined') ? Environment[this.environment] : 'undefined';
+  }
+
 }
+
