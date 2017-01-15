@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { EnvironmentService } from '../../../shared/services/environment';
 
 @Component({
   selector: 'settings-component',
@@ -7,6 +8,6 @@ import { NavController } from 'ionic-angular';
 })
 export class SettingsComponent {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private environmentService: EnvironmentService, private navCtrl: NavController) { }
 
 }
