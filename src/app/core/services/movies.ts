@@ -3,20 +3,19 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeAll';
-import { EnvironmentService } from '../../shared/services/environment';
+import { ConfigService } from '../../shared/services/config';
 import { Movie } from '../models/movie';
 
 @Injectable()
 export class MoviesService {
 
-    url = 'http://www.omdbapi.com/?s=Batman';
-
-    constructor(private environmentService: EnvironmentService, private http: Http) { }
+    constructor(private configService: ConfigService, private http: Http) { }
 
     findAll():Observable<Movie> {
-		console.log('MoviesService using environment: ' + this.environmentService.currentName());
+        let config = this.configService.getConfig();
+        console.log('MoviesService using environment: ' + config.name);
         return this.http
-            .get(this.url)
+            .get(`${config.omdbApiBaseUrl}/?s=Batman`)
             .map(res => res.json().Search)
             .mergeAll();
     }

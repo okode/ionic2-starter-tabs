@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { EnvironmentService } from './services/environment';
+import { ConfigService } from './services/config';
 
 @NgModule({
   declarations: [],
   imports: [] ,
   entryComponents: [],
-  providers: [ { provide: EnvironmentService, useClass: EnvironmentService } ]
+  providers: [ { provide: ConfigService, useClass: ConfigService } ]
 })
 export class SharedModule {}
