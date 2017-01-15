@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { App } from './app.component';
+import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
 export class CrashlyticsErrorHandler extends IonicErrorHandler {
@@ -29,6 +30,7 @@ export class CrashlyticsErrorHandler extends IonicErrorHandler {
   declarations: [ App ],
   imports: [
     IonicModule.forRoot(App),
+	SharedModule,
     CoreModule
   ],
   bootstrap: [ IonicApp ],
