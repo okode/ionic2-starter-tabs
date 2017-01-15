@@ -12,6 +12,7 @@ export class ConfigService {
   private config: Config;
 
   constructor(private actionSheetCtrl: ActionSheetController) {
+    this.config = ConfigService.configs[0];
     if (ConfigService.configs.length > 1) {
       this.actionSheetCtrl.create(
         {
@@ -19,8 +20,6 @@ export class ConfigService {
           buttons: ConfigService.configs.map((c: Config) => ({ text: c.name, handler: () => { this.config = c; } }))
         }
       ).present();
-    } else {
-      this.config = ConfigService.configs[0];
     }
   }
 
