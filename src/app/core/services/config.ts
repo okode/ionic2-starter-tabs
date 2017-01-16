@@ -10,7 +10,7 @@ export class ConfigService {
 
   constructor(private http: Http, private actionSheetCtrl: ActionSheetController, private toastCtrl: ToastController) {
     this.http
-      .get('/assets/config/config.json')
+      .get('assets/config/config.json')
       .subscribe(res => {
         let configs = res.json();
         this.setConfig('default', configs['default']);
