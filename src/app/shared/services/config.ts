@@ -12,7 +12,6 @@ export class ConfigService {
   private config: Config;
 
   constructor(private actionSheetCtrl: ActionSheetController, private toastCtrl: ToastController) {
-    this.config = ConfigService.configs[0];
     if (ConfigService.configs.length > 1) {
       let actionSheet = this.actionSheetCtrl.create(
         {
