@@ -2,10 +2,6 @@ import { IonicErrorHandler } from 'ionic-angular';
 
 export class CrashlyticsErrorHandler extends IonicErrorHandler {
 
-  constructor() {
-    super();
-  }
-
   handleError(error) {
     super.handleError(error);
     if (typeof fabric != 'undefined') {
