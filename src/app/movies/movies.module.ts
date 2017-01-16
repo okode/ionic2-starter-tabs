@@ -9,7 +9,7 @@ import { MoviesService } from './services/movies';
     HomeComponent,
     SettingsComponent
   ],
-  imports: [ IonicModule.forRoot(HomeComponent) ],
+  imports: [ IonicModule ],
   entryComponents: [
     HomeComponent,
     SettingsComponent
