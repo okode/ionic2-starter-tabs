@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ConfigService } from '../../../shared/services/config';
+import { ConfigService } from '../../../core/services/config';
 
 @Component({
   selector: 'settings-component',

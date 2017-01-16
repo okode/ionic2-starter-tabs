@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from '../home/home';
-import { SettingsComponent } from '../settings/settings';
+import { HomeComponent } from '../../../movies/components/home/home';
+import { SettingsComponent } from '../../../movies/components/settings/settings';
 
 @Component({
   templateUrl: 'tabs.html'

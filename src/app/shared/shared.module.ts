@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { ConfigService } from './services/config';
 
 @NgModule({
   declarations: [],
   imports: [] ,
   entryComponents: [],
-  providers: [ { provide: ConfigService, useClass: ConfigService } ]
+  providers: []
 })
 export class SharedModule {}
