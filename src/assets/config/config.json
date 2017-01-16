@@ -1,0 +1,18 @@
+{
+    "default":
+    {
+        "omdbApiBaseUrl": "http://www.omdbapi.com"
+    },
+    "integration":
+    {
+        
+    },
+    "preproduction":
+    {
+        
+    },
+    "production":
+    {
+        "omdbApiBaseUrl": "https://www.omdbapi.com"
+    }
+}
