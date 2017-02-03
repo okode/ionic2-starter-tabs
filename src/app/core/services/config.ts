@@ -19,6 +19,7 @@ export class ConfigService {
           let actionSheet = this.actionSheetCtrl.create(
             {
               title: 'Select environment',
+              enableBackdropDismiss: false,
               buttons: environments.map(environment => (
                 {
                   text: environment,
