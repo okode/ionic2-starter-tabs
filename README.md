@@ -91,6 +91,13 @@ $ ionic plugin add cordova-fabric-plugin --save \
 --variable FABRIC_API_SECRET=xxx
 ```
 
+Add SQLite plugin
+-----------------
+
+```
+$ cordova plugin add cordova-sqlite-storage --save
+```
+
 Update Git repo enabling Git Flow
 ---------------------------------
 

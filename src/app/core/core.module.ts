@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { TabsComponent } from './components/tabs/tabs';
 import { CrashlyticsErrorHandler } from './handlers/crashlytics';
+import { Storage } from '@ionic/storage';
 import { ConfigService } from './services/config';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { ConfigService } from './services/config';
     TabsComponent
   ],
   providers: [
+    Storage,
     { provide: ErrorHandler, useClass: CrashlyticsErrorHandler },
     { provide: ConfigService, useClass: ConfigService }
   ]
